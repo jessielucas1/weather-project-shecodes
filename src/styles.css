@@ -103,3 +103,7 @@ img {
   position: relative;
   right: 8px;
 }
+small {
+  padding-left: 50px;
+  font-size: 11pt;
+}
