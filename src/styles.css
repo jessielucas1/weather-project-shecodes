@@ -1,0 +1,105 @@
+.card,
+.container {
+  margin: 0 auto;
+  padding: 20px 80px;
+  background: linear-gradient(
+    180.3deg,
+    rgb(221, 221, 221) 5.5%,
+    rgb(110, 136, 161) 90.2%
+  );
+}
+h1 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+h1,
+h2 {
+  text-align: center;
+  display: block;
+}
+.low {
+  color: gray;
+}
+form {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.col-5 {
+  margin: 10px;
+  position: relative;
+  right: -200px;
+  font-size: 18pt;
+}
+.forecast-temp {
+  position: relative;
+  top: -10px;
+  font-size: 10pt;
+}
+p,
+.forecast-temp {
+  display: block;
+  position: relative;
+  left: 175px;
+}
+.forecast-low {
+  color: rgb(81, 81, 81);
+}
+.container.text-center {
+  position: relative;
+  left: 250px;
+  text-align: center;
+  margin: 0 auto;
+}
+body {
+  margin: 0 auto;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.title {
+  position: relative;
+  left: 175px;
+}
+.cloud-icon {
+  padding-bottom: 15px;
+  padding-left: 3px;
+}
+.rain-icon {
+  width: 45px;
+  padding-bottom: 15px;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+h3 {
+  text-align: center;
+}
+h4 {
+  font-size: 15pt;
+}
+.sunrise {
+  position: relative;
+  top: -8px;
+  right: 50px;
+  color: rgb(189, 114, 15);
+  border: 1.5pt solid black;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 5px 5px 5px 1px rgb(189, 114, 15);
+}
+.sunset {
+  position: relative;
+  right: 40px;
+  color: darkblue;
+  border: 1.5pt solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  box-shadow: 5px 5px 5px 1px;
+}
+img {
+  position: relative;
+  left: 159px;
+}
+.fri-text {
+  position: relative;
+  right: 8px;
+}
