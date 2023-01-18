@@ -42,6 +42,20 @@ function searchCity(city) {
   axios.get(apiUrl).then(showTemperature);
 }
 
+function formatTime(timestamp) {
+  let time = new Date(timestamp);
+
+  let hours = time.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = time.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+
+  return `${hours}:${minutes}`;
+}
 function showTemperature(response) {
   let cityElement = document.querySelector("h1");
   let temperatureElement = document.querySelector("h2");
@@ -50,8 +64,10 @@ function showTemperature(response) {
   let feelslikeElement = document.querySelector(".feelsLike");
   let sunriseElement = document.querySelector(".sunriseTime");
   let sunsetElement = document.querySelector(".sunsetTime");
-  sunriseElement.innerHTML = `${response.data.sys.sunrise} AM`;
-  sunsetElement.innerHTML = `${response.data.sys.sunset} PM`;
+  let iconElement = document.querySelector("#icon");
+
+  sunriseElement.innerHTML = formatTime(response.data.sys.sunrise * 1000);
+  sunsetElement.innerHTML = `${formatTime(response.data.sys.sunset * 1000)}`;
   cityElement.innerHTML = response.data.name;
   temperatureElement.innerHTML = `${Math.round(response.data.main.temp)} °C`;
   humidityElement.innerHTML = `${response.data.main.humidity} %`;
@@ -59,4 +75,9 @@ function showTemperature(response) {
   feelslikeElement.innerHTML = `${Math.round(
     response.data.main.feels_like
   )} °C`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather.icon}@2x.png`
+  );
 }
+searchCity();

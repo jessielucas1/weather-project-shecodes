@@ -107,3 +107,7 @@ small {
   padding-left: 50px;
   font-size: 11pt;
 }
+.main-icon {
+  position: relative;
+  left: 0px;
+}
