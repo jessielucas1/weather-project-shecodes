@@ -65,7 +65,7 @@ body {
 }
 .rain-icon {
   width: 45px;
-  padding-bottom: 15px;
+  padding-bottom: 1px;
   padding-top: 1px;
   padding-left: 1px;
   padding-right: 1px;
@@ -95,10 +95,7 @@ h4 {
   padding: 10px 15px;
   box-shadow: 5px 5px 5px 1px;
 }
-img {
-  position: relative;
-  left: 159px;
-}
+
 .fri-text {
   position: relative;
   right: 8px;
@@ -107,7 +104,7 @@ small {
   padding-left: 50px;
   font-size: 11pt;
 }
-.main-icon {
+img {
   position: relative;
-  left: 0px;
+  right: -550px;
 }
