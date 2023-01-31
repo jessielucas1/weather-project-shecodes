@@ -10,91 +10,110 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link href="src/styles.css" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap"
       rel="stylesheet"
     />
-  <title>Weather</title>
-  <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>Weather</title>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   </head>
-  
+
   <body>
     <div class="container">
       <form id="search-form">
-        <input type="text" 
-        placeholder="Search your city.." 
-        autofocus="on"
-        autocomplete="off"
-        id="city-search" />
+        <input
+          type="text"
+          placeholder="Search your city.."
+          autocomplete="off"
+          id="city-search"
+        />
         <input type="submit" value="Search" id="search-btn" />
       </form>
       <br />
       <h1>New York</h1>
-      <h2> 43° C | °F </h2>
-        <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" class="main-icon" id="icon" />
-      <h3> Monday 8:44pm</h3>
+      <h2>
+        <span id="mainTemp">43</span><a id=""> ° C </a>|
+        <a href="#" id="fahrenheit-link"> °F</a>
+      </h2>
+      <img
+        src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+        alt=""
+        class="main-icon"
+        id="icon"
+      />
+      <h3>Monday 8:44pm</h3>
       <div class="row">
-        <div class="col-5"><strong>Humidity: </strong><span class="humid"> 30%</span></div>
+        <div class="col-5">
+          <strong>Humidity: </strong><span class="humid"> 30</span>
+        </div>
         <div class="row">
-          <div class="col-5"><strong>Wind: </strong><span class="wind"> 17 mph</span></div>
-            <div class="col-5"><span class="sunrise">Sunrise:</span><span class="sunriseTime"> 6:50 AM</span></div>
+          <div class="col-5">
+            <strong>Wind: </strong><span class="wind"> 17 mph</span>
+          </div>
+          <div class="col-5">
+            <span class="sunrise">Sunrise:</span
+            ><span class="sunriseTime"> 6:50 AM</span>
+          </div>
           <div class="row">
-            <div class="col-5"><strong>Feels Like: </strong><span class="feelsLike">5°</span></div>
-             <div class="col-5"><span class="sunset"> Sunset: </span><span class="sunsetTime"> 4:35 PM </span></div>
+            <div class="col-5">
+              <strong>Feels Like: </strong><span class="feelsLike">5°</span>
+            </div>
+            <div class="col-5">
+              <span class="sunset"> Sunset: </span
+              ><span class="sunsetTime"> 4:35 PM </span>
+            </div>
           </div>
         </div>
       </div>
-      <p>
+      <p></p>
       <div class="card">
         <h4>Upcoming Forecast</h4>
         <div class="row">
           <div class="col-2">
-         <span class="title"> Tues </span><br />
-      <img src="images/sun.png" alt="" width="75" class="sun-icon" />
+            <span class="title"> Tues </span><br />
             <div class="forecast-temp">
               50° <span class="forecast-low"> 35° </span>
             </div>
           </div>
           <div class="col-2">
-           <span class="title">Wed </span><br />
-        <img src="images/sun.png" alt="" width="75" class="sun-icon" />
+            <span class="title">Wed </span><br />
             <div class="forecast-temp">
               55° <span class="forecast-low"> 35° </span>
             </div>
           </div>
           <div class="col-2">
             <span class="title">Thurs</span><br />
-          <img src="images/cloudy.png" alt="" width="54" class="cloud-icon" />
             <div class="forecast-temp">
               51° <span class="forecast-low"> 40° </span>
             </div>
           </div>
           <div class="col-2">
-          <span class="title">Fri</span><br />
-            <img src="images/rainy.png" alt="" class="rain-icon" />
-            <div class="forecast-temp"> <span class="fri-text">51°</span>
-           <span class="forecast-low"> 40° </span>
+            <span class="title">Fri</span><br />
+            <div class="forecast-temp">
+              <span class="fri-text">51°</span>
+              <span class="forecast-low"> 40° </span>
             </div>
           </div>
           <div class="col-2">
             <span class="title">Sat</span><br />
-          <img src="images/cloudy.png" alt="" width="54" class="cloud-icon" />
-            <div class="forecast-temp"> 53°<span class="forecast-low"> 47° </span>
-                 <script type="text/javascript" src="src/script.js"> </script>
-              </div>
-              </div>
+            <div class="forecast-temp">
+              53°<span class="forecast-low"> 47° </span>
             </div>
           </div>
         </div>
-        </p>
-           <small>
-                    <a href="https://github.com/jessielucas1/weather-project-shecodes" target="blank">Open Source Code</a>" by Jessica Lucas
-              </small>
       </div>
     </div>
+    <small>
+      <a
+        href="https://github.com/jessielucas1/weather-project-shecodes"
+        target="blank"
+        >Open Source Code</a
+      >" by Jessica Lucas
+    </small>
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="src/script.js"></script>
   </body>
 </html>
