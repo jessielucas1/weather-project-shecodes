@@ -96,7 +96,7 @@ a:link {
   text-align: center;
 }
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 18px;
   opacity: 0.6;
 }
 .weather-forecast-temperatures {
@@ -121,4 +121,10 @@ ul {
   position: relative;
   left: 65px;
   font-size: 22px;
+}
+#forecast {
+  border: 1pt solid rgb(42, 64, 96);
+  border-radius: 5px;
+  background-color: #c2cfda;
+  padding: 15px 10px;
 }
