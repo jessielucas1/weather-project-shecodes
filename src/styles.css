@@ -1,7 +1,6 @@
-.card,
 .container {
   margin: 0 auto;
-  padding: 20px 80px;
+  padding: 30px 80px;
   background: linear-gradient(
     180.3deg,
     rgb(221, 221, 221) 5.5%,
@@ -17,33 +16,10 @@ h2 {
   text-align: center;
   display: block;
 }
-.low {
-  color: gray;
-}
 form {
   display: block;
   margin: auto;
   text-align: center;
-}
-.col-5 {
-  margin: 10px;
-  position: relative;
-  right: -200px;
-  font-size: 18pt;
-}
-.forecast-temp {
-  position: relative;
-  top: -10px;
-  font-size: 10pt;
-}
-p,
-.forecast-temp {
-  display: block;
-  position: relative;
-  left: 175px;
-}
-.forecast-low {
-  color: rgb(81, 81, 81);
 }
 .container.text-center {
   position: relative;
@@ -59,52 +35,48 @@ body {
   position: relative;
   left: 175px;
 }
-.cloud-icon {
-  padding-bottom: 15px;
-  padding-left: 3px;
-}
-.rain-icon {
-  width: 45px;
-  padding-bottom: 1px;
-  padding-top: 1px;
-  padding-left: 1px;
-  padding-right: 1px;
-}
 h3 {
   text-align: center;
 }
-h4 {
-  font-size: 15pt;
-}
 .sunrise {
   position: relative;
-  top: -8px;
-  right: 50px;
+  top: 2px;
+  right: 20px;
   color: rgb(189, 114, 15);
   border: 1.5pt solid black;
   border-radius: 10px;
   padding: 10px;
   box-shadow: 5px 5px 5px 1px rgb(189, 114, 15);
+  font-size: 20px;
 }
 .sunset {
   position: relative;
-  right: 40px;
+  top: 28px;
+  right: 20px;
   color: darkblue;
   border: 1.5pt solid black;
   border-radius: 10px;
   padding: 10px 15px;
   box-shadow: 5px 5px 5px 1px;
+  font-size: 20px;
 }
-
-.fri-text {
+.sunriseTime {
   position: relative;
-  right: 8px;
+  top: 2px;
+  right: 5px;
+  font-size: 22px;
+}
+.sunsetTime {
+  position: relative;
+  top: 28px;
+  right: 5px;
+  font-size: 22px;
 }
 small {
   padding-left: 50px;
   font-size: 11pt;
 }
-img {
+.main-icon {
   position: relative;
   right: -541px;
 }
@@ -118,4 +90,36 @@ h2 .active:hover {
 }
 a:link {
   text-decoration: none;
+}
+.weather-forecast {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.6;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+  color: black;
+}
+.weather-forecast-low {
+  opacity: 0.6;
+}
+ul {
+  list-style-type: none;
+  margin: 10px;
+}
+.col-6 {
+  text-align: center;
+}
+#sunTimes {
+  position: relative;
+  left: -105px;
+}
+#description {
+  position: relative;
+  left: 65px;
+  font-size: 22px;
 }
