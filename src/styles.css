@@ -108,3 +108,14 @@ img {
   position: relative;
   right: -541px;
 }
+h2 .active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+h2 .active:hover {
+  text-decoration: none;
+}
+a:link {
+  text-decoration: none;
+}
