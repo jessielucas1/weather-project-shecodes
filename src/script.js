@@ -1,5 +1,5 @@
-function showDate() {
-  let now = new Date();
+function showDate(timestamp) {
+  let now = new Date(timestamp);
 
   let h3 = document.querySelector("h3");
   let hours = now.getHours();
@@ -14,15 +14,16 @@ function showDate() {
     "Saturday",
   ];
   let day = days[now.getDay()];
-  h3.innerHTML = `${day} ${hours} : ${minutes}`;
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
   if (hours < 10) {
     hours = `0${hours}`;
   }
+  h3.innerHTML = `${day} ${hours} : ${minutes}`;
+  return `${day} ${hours} : ${minutes}`;
 }
-showDate();
+showDate(new Date());
 
 function formatTime(timestamp) {
   let time = new Date(timestamp);
@@ -99,7 +100,9 @@ function showTemperature(response) {
   let sunriseElement = document.querySelector(".sunriseTime");
   let sunsetElement = document.querySelector(".sunsetTime");
   let iconElement = document.querySelector("#icon");
+  let dateElement = document.querySelector("h3");
 
+  dateElement.innerHTML = showDate(response.data.dt * 1000);
   sunriseElement.innerHTML = formatTime(response.data.sys.sunrise * 1000);
   sunsetElement.innerHTML = formatTime(response.data.sys.sunset * 1000);
   cityElement.innerHTML = response.data.name;
@@ -159,5 +162,3 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
-displayForecast();
